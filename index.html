@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtBook</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="cabeçalho">
+        <div class="container">
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu">
+                <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__titulo">Categorias</li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Aventura</a>
+                </li>
+            
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Biografia</a>
+                </li>
+                
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Ficção</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Romance</a>
+                </li>
+                    
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Suspense</a>
+                </li> 
+    
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Fantasia</a>
+                </li>  
+    
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Horror</a>
+                </li> 
+    
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Crimes reais</a>
+                </li> 
+    
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Autoajuda</a>
+                </li> 
+    
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Mangá</a>
+                </li> 
+    
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">HQ's</a>
+                </li> 
+    
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Distopia</a>
+                </li> 
+            </ul>
+            <img src="img/logo.png.png" alt="Logo ArtBook" class="container__imagem">
+        </div>
+        <div class="container">
+            <a href="#"><img src="img/Favoritos.svg" alt="Favoritos" class="container__imagem"></a>
+            <a href="#"><img src="img/Compras.svg" alt="Carrinhos de compras" class="container__imagem"></a>
+            <a href="#"><img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem"></a>
+        </div>
+    </header>
+    <section class="banner">
+        <h2 class="banner__titulo">Tem ideia de como começar?</h2>
+        <p class="banner__texto">Encontre em nossa estante o que precisa para cada um de seus momentos!</p>
+        <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
+    </section>
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Novos lançamentos</h2>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="img/suicidas.jpg"
+                        alt="Livro Suicidas"></div>
+                <div class="swiper-slide"><img src="img/Lady Killers_ Assassinas em Série + Brinde Exclusivo (1).png"
+                        alt="Livro Lady killers"></div>
+                <div class="swiper-slide"><img src="img/quarto_de_despejo.svg"
+                        alt="Livro Quarto de despejo"></div>
+                <div class="swiper-slide"><img src="img/torto_arado.svg" alt="Livro "></div>
+                <div class="swiper-slide"><img src="img/As Vantagens De Ser Invisivel Na Amazon_com.br" alt="Livro sobre portugol"></div>
+                <div class="swiper-slide"><img src="img/a_hora_da_estrela.svg" alt="livro sobre acessibilidade"></div>
+            </div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
+        <div class="card">
+            <!-- 1º linha -->
+            <div class="card__descrição">
+                <!-- 1º coluna -->
+                <div class="descrição">
+                    <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
+                    <h2 class="descrição__titulo-livro">Histórias estraordinárias.</h2>
+                    <p class="descrição__texto">Dezoito contos assombrosos de Edgar Allan Poe.</p>
+                </div>
+                <!-- 2º coluna -->
+                <img src="img/" class="descrição__imagem">
+            </div>
+
+            <!-- 2º linha -->
+            <div class="card__botões">
+                <!-- 1º coluna -->
+                <ul class="botões">
+                    <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+                    <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+                </ul>
+                <!-- 2º coluna -->
+                <a href="#" class="botões__ancora">Saiba mais</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Novos lançamentos</h2>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="img/__ Rupi Kaur lança _meu corpo minha casa_, terceira coletânea de poesias incríveis.jpg"
+                        alt="Livro Meu corpo minha casa"></div>
+                <div class="swiper-slide"><img src="img/(pdf gratuito drive) _os dois morrem no final_ de adam silvera.jpg"
+                        alt="Livro Os dois morrem no final"></div>
+                <div class="swiper-slide"><img src="img/dom_casmurro.svg"
+                        alt="Livro Dom Casmurro"></div>
+                <div class="swiper-slide"><img src="img/jantarsecreto.jpg" alt="Livro Jantar secreto"></div>
+                <div class="swiper-slide"><img src="img/mulheres_que_correm_como_os_lobos.svg" alt="Livro feminista"></div>
+                <div class="swiper-slide"><img src="img/pequeno_mural_antirracista.svg" alt="livro Pequeno manual antirracista"></div>
+            </div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
+        <div class="card">
+            <!-- 1º linha -->
+            <div class="card__descrição">
+                <!-- 1º coluna -->
+                <div class="descrição">
+                    <img src="img/Estrelinhas.svg" alt="Avaliação 5 estrelas">
+                    <h3 class="descrição__titulo">Autor do Mês</h3>
+                    <h2 class="descrição__titulo-livro">Raphael Montes</h2>
+                    <p class="descrição__texto">Escritor e roteirista brasileiro de literatura policial.
+                    </p>
+                </div>
+                <!-- 2º coluna -->
+                <img src="img/Escritora.svg" class="descrição__imagem">
+            </div>
+
+            <!-- 2º linha -->
+            <div class="card__botões">
+                <!-- 1º coluna -->
+                <ul class="botões">
+                    <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar"></li>
+                    <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar ao carrinho"></li>
+                </ul>
+                <!-- 2º coluna -->
+                <a href="#" class="botões__ancora">Saiba mais</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="tópicos">
+        <h2 class="tópicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+        <ul class="tópicos__lista">
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Fantasia</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Ficção</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Drama</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Romance de época</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Distopia</a>
+            </li>
+        </ul>
+    </section>
+
+    <section class="contato">
+        <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+        <p class="contato__texto">Atualizações, promoções e disponibilidade livros.</p>
+        <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
+    </section>
+
+    <hr />
+
+    <footer class="rodapé">
+        <h2 class="rodapé__titulo">ArtBook, sua melhor história começa aqui!</h2>
+    </footer>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+        });
+    </script>
+</body>
+
+</html>
